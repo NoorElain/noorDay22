@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="noor">
+        <div class="h1"><h2>Login</h2></div>
+        <form class="form" action="Review.html"  onclick="login()" id="Login-form">
+
+            <div class="username">
+                <label for="username">Username : </label><br>
+                <input class="input-box" type="text" id="usernameID" placeholder="  username..." required><br>
+            </div>
+            <div class="password">
+                <label for="password">password : </label><br>
+                <input class="input-box" type="password" id="passwordID" placeholder="  password..." required><br>
+            </div>
+            <div class="forget">
+                <a href="#">Forget password?</a>
+            </div> 
+            <div class="btn">
+                <input class="btn" type="submit" value="Sign In" ><br>
+            </div>
+           
+        </form>
+    </div><br><br><br><br>
+    <hr><hr><hr>
+
+
+
+    <div class="noor">
+        <div class="h1"><h2>Sign Up</h2></div>
+        <form class="form"  id="form">
+
+            <div class="username">
+                <label for="username">Username : </label><br>
+                <input class="input-box" type="text" id="usernameID" placeholder="  username..." required><br>
+            </div>
+            <div class="password">
+                <label for="password">password : </label><br>
+                <input class="input-box" type="password" id="passwordID" placeholder="  password..." required><br>
+            </div>
+
+            <div class="password">
+                <label for="age">Age : </label><br>
+                <input class="input-box" type="number" id="ageID" placeholder="  Select your age..." required><br>
+            </div>
+             
+            <div class="password">
+                <label for="Gender">Gender : </label><br><br>
+                <input type="radio" name="rad1" required><label for="yes" >Female </label> <input type="radio" name="rad1" required><label for="no">Male </label><br><br>
+            </div>
+
+            <div class="password">
+                <label for="number">Phone number : </label><br>
+                <input class="input-box" type="text" id="phoneID" placeholder="  Phone number..." required><br>
+            </div>
+
+
+            <div class="btn">
+                
+                <button class="btn" onclick='signUp()'>Sign Up</button>
+            </div>
+        </form>
+    </div><hr><hr><hr>
+    <div class="noor">
+        <div class="h1"><h2>Forget password</h2></div>
+        <form class="form"  id="Login-form">
+
+            <div class="username">
+                <label for="username">Username : </label><br>
+                <input class="input-box" type="text" id="usernameID" placeholder="  username..." required><br>
+            </div>
+            <div class="password">
+                <label for="password">password : </label><br>
+                <input class="input-box" type="password" id="passwordID" placeholder="  password..." required><br>
+            </div>
+            
+            <div class="btn">
+                
+                <button onclick="forget()" class="btn">Done</button>
+            </div>
+            
+        </form>
+    </div><br><br><br><br>
+</body>
+</html>
